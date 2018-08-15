@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="30px" viewBox="0 0 40 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>0: Icons / flag-it / big</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="0:-Icons-/-flag-it-/-big" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-flag-it-big">
+            <g id="Group-5">
+                <path d="M6,-4.4408921e-14 L13.3333333,-4.4408921e-14 L13.3333333,30 L6,30 C2.6862915,30 1.29399067e-15,27.3137085 8.8817842e-16,24 L0,6 C-4.05812251e-16,2.6862915 2.6862915,-4.4688381e-14 6,-4.52970994e-14 Z" id="Rectangle-5" fill="#26913C"></path>
+                <polygon id="Rectangle-5" fill="#FFFFFF" points="13.3333333 1.77635684e-15 26.6666667 -6.31088724e-30 26.6666667 30 13.3333333 30"></polygon>
+                <path d="M26.6666667,-4.4408921e-14 L34,-4.4408921e-14 C37.3137085,-4.50176394e-14 40,2.6862915 40,6 L40,24 C40,27.3137085 37.3137085,30 34,30 L26.6666667,30 L26.6666667,-4.4408921e-14 Z" id="Rectangle-5" fill="#EB1A2D"></path>
+            </g>
+            <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,24 C0.5,27.0375661 2.96243388,29.5 6,29.5 L34,29.5 C37.0375661,29.5 39.5,27.0375661 39.5,24 L39.5,6 C39.5,2.96243388 37.0375661,0.5 34,0.5 L6,0.5 Z" id="Rectangle-5" stroke-opacity="0.2" stroke="#000000"></path>
+        </g>
+    </g>
+</svg>
