@@ -47,15 +47,15 @@ define( 'LEADER_DEFAULT_ALT', 'Slot Gallina Online');
  * @since 1.0
  */
 
-function ldscripts() {
+function ld_scripts() {
 
 	// Load our main stylesheet.
-	wp_enqueue_style( 'ld-styles', SGO_CSS_URI . 'ld-styles.min.css' );
+	wp_enqueue_style( 'ld-styles', LEADER_CSS_URI . 'ld-styles.min.css' );
 
 	// Load jquery script.
-	wp_enqueue_script( 'ld-jquery', SGO_JS_URI . 'jquery.min.js', '', '', true );
+	wp_enqueue_script( 'ld-jquery', LEADER_JS_URI . 'jquery.min.js', '', '', true );
 	// Load our main scripts.
-	wp_enqueue_script( 'ld-scripts', SGO_JS_URI . 'ld-scripts.min.js', array('ld-jquery'), '', true );
+	wp_enqueue_script( 'ld-scripts', LEADER_JS_URI . 'ld-scripts.min.js', array('ld-jquery'), '', true );
 
 }
 
