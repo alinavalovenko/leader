@@ -1,7 +1,10 @@
-<?php
-	/**
-	 * Created by PhpStorm.
-	 * User: user
-	 * Date: 8/21/2018
-	 * Time: 10:36 AM
-	 */
+<?php get_header(); ?>
+<main>
+	<?php if ( have_posts() ): the_post(); ?>
+		<?php get_template_part( 'content' ); ?>
+	<?php else : ?>
+		<?php get_template_part( 'content', 'none' ); ?>
+
+	<?php endif; ?>
+</main>
+<?php get_footer(); ?>
