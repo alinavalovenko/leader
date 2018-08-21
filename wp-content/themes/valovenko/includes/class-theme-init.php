@@ -16,10 +16,14 @@
 				set_post_thumbnail_size( 350, 350, false );
 
 				//add_filter( 'script_loader_tag', array ( &$this, 'changed_tag_script'), 10, 3  );
-				add_filter( 'style_loader_tag', array ( &$this, 'changed_tag_style'), 10, 4  );
+				add_filter( 'style_loader_tag', array ( &$this, 'changed_tag_style' ), 10, 4 );
 				add_filter( 'excerpt_more', array ( $this, 'sgo_excerpt_more' ) );
-				add_filter( 'excerpt_length', function() { 	return 25; } );
-
+				add_filter( 'excerpt_length', function() {
+					return 25;
+				} );
+				add_filter( 'wp_mail_from_name', function( $from_name ) {
+					return bloginfo();
+				} );
 
 			}
 
@@ -36,17 +40,20 @@
 			}
 
 			function changed_tag_script( $tag, $handle, $src ) {
-				$tag = '<script src="' . $src . '" id="'.$handle .'" defer="defer"></script>';
+				$tag = '<script src="' . $src . '" id="' . $handle . '" defer="defer"></script>';
+
 				return $tag;
 			}
 
-			function changed_tag_style($html, $handle, $href, $media){
+			function changed_tag_style( $html, $handle, $href, $media ) {
 				$html = '<link rel="stylesheet"  href="' . $href . '" media="' . $media . '" />';
+
 				return $html;
 			}
 
 			function vl_scripts() {
 				wp_enqueue_style( 'vl-styles', VL_CSS_URI . 'styles.min.css' );
+				wp_enqueue_style( 'styles', VL_THEME_URI . '/style.css', array ( 'vl-styles' ));
 				wp_enqueue_script( 'vl-jquery', VL_JS_URI . 'jquery.min.js', '', '', true );
 				wp_enqueue_script( 'vl-scripts', VL_JS_URI . 'scripts.min.js', array ( 'sgo-jquery' ), '', true );
 				wp_localize_script( 'vl-jquery', 'vl_ajax', array ( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );

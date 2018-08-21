@@ -4,21 +4,24 @@
 	 */
 	get_header(); ?>
 <section id="banner">
-<h1>Banner</h1>
-    <?php vl_banner_section(); ?>
+    <h1>Banner</h1>
+	<?php vl_banner_section(); ?>
 </section>
 
 <section id="reason-to-stay">
-<h4>Reason to stay</h4>
-    <?php vl_reason_to_stay_section(); ?>
+    <h4>Reason to stay</h4>
+	<?php vl_reason_to_stay_section(); ?>
 </section>
 
 <section id="about-us">
     <h4>About Us</h4>
+
+	<?php v1_about_us(); ?>
 </section>
 
 <section id="services">
     <h3>Services</h3>
+	<?php vl_services(); ?>
 </section>
 
 <section id="gallery">

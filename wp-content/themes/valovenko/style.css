@@ -6,3 +6,12 @@ Author:         Alina Valovenko
 Version:        0.1.0
 Text Domain: 	valovenko
 */
+/** HEADER **/
+header.header-wrap {
+    background-color: #33baf0;
+    padding: 30px 0;
+}
+
+#site-header .site-logo{
+    width: 200px;
+}

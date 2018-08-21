@@ -135,7 +135,7 @@
 							),
 						),
 						array (
-							'key'     => 'vl_servises_proce',
+							'key'     => 'vl_servises_price',
 							'label'   => 'Price',
 							'name'    => 'services_price',
 							'type'    => 'text',
@@ -189,22 +189,136 @@
 	function vl_banner_section() {
 		$banner = get_field( 'banner_image' );
 		if ( $banner ) {
-			echo '<img src="' . $banner['url'] . '" srcset = "' . wp_get_attachment_image_srcset($banner['ID']) .'" alt="' . $banner['alt'] . '" />';
+			echo '<img src="' . $banner['url'] . '" srcset = "' . wp_get_attachment_image_srcset( $banner['ID'] ) . '" alt="' . $banner['alt'] . '" />';
 		} else {
 			echo '<img src="' . VL_DEFAULT_IMAGE . '" alt="' . VL_DEFAULT_ALT . '" />';
 		}
-		unset($banner);
+		unset( $banner );
 	}
 
-	function vl_reason_to_stay_section(){
-		$reason_to_stay = get_field('reason_to_stay');
-		if($reason_to_stay) {
-			var_dump( $reason_to_stay );
+	function vl_reason_to_stay_section() {
+		$reason_to_stay = get_field( 'reason_to_stay' );
+
+		if ( $reason_to_stay ) {
+			foreach ( $reason_to_stay as $item ) {
+				?>
+                <div class="reason-card col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="reason-icon"><img src="<?php echo $item['reason_image']['url']; ?>"
+                                                  alt="<?php echo $item['reason_image']['alt']; ?>"
+                                                  class="thumbnail"/></div>
+                    <div class="reason-title"><?php echo $item['reason_title']; ?></div>
+                    <div class="reason-desc"><?php echo $item['reason_description']; ?></div>
+                </div>
+				<?php
+			}
 		} else {
 			?>
-<div class="reason-card">
-
-</div>
-<?php
+            <div class="reason-card col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <div class="reason-icon"><img src="<?php echo VL_DEFAULT_IMAGE; ?>" alt="<?php echo VL_DEFAULT_ALT; ?>"
+                                              class="thumbnail"/></div>
+                <div class="reason-title">You Want to Revenue</div>
+                <div class="reason-desc">for your online business through great design.</div>
+            </div>
+			<?php
 		}
+	}
+
+	function v1_about_us() {
+		$about_us = get_field( 'about_us' );
+		if ( $about_us['section_title'] ) {
+			?>
+            <div class="about-us-subtitle"><?php echo $about_us['sub_title']; ?></div>
+            <div class="about-us-title"><?php echo $about_us['section_title']; ?></div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <article>
+					<?php echo $about_us['section_content']; ?>
+                </article>
+
+                <div class="row performance-indicators">
+                    <div class="col-xs-6">
+                        <div><?php echo $about_us['work_period']; ?></div>
+                        <div>Weekly users</div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div><?php echo $about_us['success_count']; ?></div>
+                        <div>Concurrent reports</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="<?php echo $about_us['image']['url']; ?>"
+                     srcset="<?php wp_get_attachment_image_srcset( $about_us['image']['ID'] ); ?>"
+                     alt="<?php echo $about_us['image']['alt']; ?>"/>
+            </div>
+			<?php
+		} else {
+			?>
+            <div class="about-us-subtitle">OUR SHORT STORY</div>
+            <div class="about-us-title">ABOUT US</div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <article>
+                    <h4>Bize Constantly Growing Big Data Company</h4>
+                    <p>Authoritatively leverage existing bleeding-edge infrastructures vis-a-vis scalable metrics.
+                        Assertively synthesize out-of-the-box schemas before impactful materials. Progressively
+                        actualize just in time partnerships with exceptional value.</p>
+                </article>
+
+                <div class="row performance-indicators">
+                    <div class="col-xs-6">
+                        <div>31m</div>
+                        <div>Weekly users</div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div>200</div>
+                        <div>Concurrent reports</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="<?php echo VL_DEFAULT_IMAGE; ?>" alt="<?php echo VL_DEFAULT_ALT; ?>"
+                     class="thumbnail"/>
+            </div>
+			<?php
+		}
+	}
+
+	function vl_services() {
+		if ( have_rows( 'servises_repeater' ) ):
+			while ( have_rows( 'servises_repeater' ) ) : the_row();
+				?>
+                <div class="service-card col-xs-12 col-sm-2 col-md-3 col-lg-3">
+                    <div class="service-label"><?php the_sub_field( 'servises_label' ); ?></div>
+                    <div class="service-title"><?php the_sub_field( 'servises_title' ); ?></div>
+                    <div class="service-desc"><?php the_sub_field( 'services_description' ); ?></div>
+                    <div class="service-price"><?php the_sub_field( 'services_price' ); ?></div>
+                </div>
+			<?php
+
+			endwhile;
+
+		else : ?>
+            <div class="service-card col-xs-12 col-sm-2 col-md-3 col-lg-3">
+                <div class="service-label">Hot</div>
+                <div class="service-title">SEO MARKETING</div>
+                <div class="service-desc">Rapidiously unleash accurate processes rather than revolutionary best
+                    practices.
+                </div>
+                <div class="service-price">$100</div>
+            </div>
+		<?php endif;
+	}
+
+	function vl_gallery() {
+		$images = get_field( 'our_features_work' );
+		$size   = 'full'; // (thumbnail, medium, large, full or custom size)
+
+		if ( $images ): ?>
+            <ul>
+				<?php foreach ( $images as $image ): ?>
+                    <li>
+						<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                    </li>
+				<?php endforeach; ?>
+            </ul>
+		<?php endif;
 	}

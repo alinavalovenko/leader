@@ -14,7 +14,7 @@
 	define( 'VL_IMAGES', VL_THEME_URI . '/assets/images/' );
 	define( 'VL_INC_DIR', VL_THEME_DIR . DS . 'includes' . DS );
 	define( 'VL_INC_URI', VL_THEME_URI . '/includes/' );
-	define( 'VL_DEFAULT_IMAGE', VL_IMAGES . '/default.jpg' );
+	define( 'VL_DEFAULT_IMAGE', VL_IMAGES . 'default.jpg' );
 	define( 'VL_DEFAULT_ALT', 'Web Studio Leader' );
 
 	require_once( VL_INC_DIR . 'class-theme-init.php' );
