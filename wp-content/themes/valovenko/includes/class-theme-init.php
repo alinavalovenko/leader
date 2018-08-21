@@ -6,8 +6,7 @@
 		class ThemeInit {
 			public function __construct() {
 
-				//add_action( 'init', array ( &$this, 'disable_emojis' ) );
-
+				add_action( 'init', array ( &$this, 'disable_emojis' ) );
 				add_action( 'init', array ( $this, 'register_menus_area' ) );
 				add_action( 'widgets_init', array ( $this, 'register_widgets_area' ) );
 				add_action( 'wp_enqueue_scripts', array ( $this, 'vl_scripts' ) );
@@ -16,8 +15,8 @@
 				add_theme_support( 'title-tag' );
 				set_post_thumbnail_size( 350, 350, false );
 
-//				add_filter( 'script_loader_tag', array ( &$this, 'changed_tag_script'), 10, 3  );
-//				add_filter( 'style_loader_tag', array ( &$this, 'changed_tag_style'), 10, 4  );
+				//add_filter( 'script_loader_tag', array ( &$this, 'changed_tag_script'), 10, 3  );
+				add_filter( 'style_loader_tag', array ( &$this, 'changed_tag_style'), 10, 4  );
 				add_filter( 'excerpt_more', array ( $this, 'sgo_excerpt_more' ) );
 				add_filter( 'excerpt_length', function() { 	return 25; } );
 
