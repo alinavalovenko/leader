@@ -16,6 +16,8 @@
 				add_action( 'wp_footer', 'wp_enqueue_script' );
 				add_filter( 'script_loader_tag', array ( &$this, 'changed_tag_script'), 10, 3  );
 				add_filter( 'style_loader_tag', array ( &$this, 'changed_tag_style'), 10, 4  );
+				add_action( 'wp_enqueue_scripts', array ( $this, 'vl_scripts' ) );
+
 
 
 			}
@@ -39,6 +41,13 @@
 			function changed_tag_style($html, $handle, $href, $media){
 				$html = '<link rel="stylesheet"  href="' . $href . '" media="' . $media . '" />';
 				return $html;
+			}
+
+			function vl_scripts() {
+				wp_enqueue_style( 'vl-styles', VL_CSS_URI . 'styles.min.css' );
+				wp_enqueue_script( 'vl-jquery', VL_JS_URI . 'jquery.min.js', '', '', true );
+				wp_enqueue_script( 'vl-scripts', VL_JS_URI . 'scripts.min.js', array ( 'sgo-jquery' ), '', true );
+				wp_localize_script( 'vl-jquery', 'vl_ajax', array ( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 			}
 		}
 
