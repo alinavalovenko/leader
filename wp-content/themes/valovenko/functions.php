@@ -18,3 +18,4 @@
 	define( 'VL_DEFAULT_ALT', 'Web Studio Leader' );
 
 	require_once( VL_INC_DIR . 'class-theme-init.php' );
+	require_once( VL_INC_DIR . 'vl-controller.php' );
