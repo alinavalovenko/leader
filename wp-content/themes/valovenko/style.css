@@ -6,6 +6,10 @@ Author:         Alina Valovenko
 Version:        0.1.0
 Text Domain: 	valovenko
 */
+
+img{
+    max-width: 100%;
+}
 /** HEADER **/
 header.header-wrap {
     background-color: #33baf0;
@@ -14,4 +18,14 @@ header.header-wrap {
 
 #site-header .site-logo{
     width: 200px;
+}
+#banner{
+    position: relative;
+}
+
+#banner h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
