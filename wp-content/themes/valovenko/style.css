@@ -194,7 +194,9 @@ span.service-price {
     line-height: 22px;
     background: url(../valovenko/assets/images/map.png)no-repeat center center / cover;
 }
-
+#contact-us li i {
+    padding-right: 10px;
+}
 li.adress {
     padding: 8px 0;
 }
@@ -241,4 +243,17 @@ footer#vl-footer{
     background: transparent;
     color: #ef403b;
     text-decoration: none;
+}
+
+#vl-footer ul li{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0;
+    margin: 5px;
+    background: #fff;
+    display: inline-block;
 }

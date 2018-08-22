@@ -57,6 +57,7 @@
 				wp_enqueue_script( 'vl-jquery', VL_JS_URI . 'jquery.min.js', '', '', true );
 				wp_enqueue_script( 'vl-scripts', VL_JS_URI . 'scripts.min.js', array ( 'sgo-jquery' ), '', true );
 				wp_localize_script( 'vl-jquery', 'vl_ajax', array ( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+				wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
 			}
 
 			function register_widgets_area() {

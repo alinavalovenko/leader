@@ -43,47 +43,48 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-5">
                 <div class="contact-info">
-                    <ul>
-                        <li class="adress"><span class="glyphicon glyphicon-map-marker" aria-hidden="true">Kharkiv, Korolenko str, build 16</span>
+                    <ul class="list-inline">
+                        <li class="adress"><i class="fa fa-map-marker" aria-hidden="true"></i>Kharkiv, Korolenko str, build 16
+                             </li>
+                        <li class="adress"><i class="fa fa-phone" aria-hidden="true"></i>Phone: <a
+                                        href="tel:+380664944787">+380 66 494 47 87</a></li>
+                        <li class="adress"><i class="fa fa-calendar" aria-hidden="true"></i>Monday-Sunday : 9.00-19.00
                         </li>
-                        <li class="adress"><span class="glyphicon glyphicon-earphone" aria-hidden="true">Phone: <a
-                                        href="tel:+380664944787">+380 66 494 47 87</a></span></li>
-                        <li class="adress"><span class="glyphicon glyphicon-calendar" aria-hidden="true">Monday-Sunday : 9.00-19.00</span>
+                        <li class="adress"><i class="fa fa-envelope" aria-hidden="true"></i>Email : <a
+                                        href="mailto:alina.valovenko@gmail.com">alina.valovenko@gmail.com</a>
                         </li>
-                        <li class="adress"><span class="glyphicon glyphicon-envelope" aria-hidden="true">Email : <a
-                                        href="mailto:alina.valovenko@gmail.com">alina.valovenko@gmail.com</a></span>
-                        </li>
-                        <li class="adress"><span class="glyphicon glyphicon-globe" aria-hidden="true">Web : <a
-                                        href="https://www.valovenko.com">https://www.valovenko.com</a></span></li>
+                        <li class="adress"><i class="fa fa-globe" aria-hidden="true"></i>Web : <a
+                                        href="https://www.valovenko.com">https://www.valovenko.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-7">
                 <div class="form-group row">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="form-group">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
                             <input type="text" placeholder="Your name" class="form-control"></div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <div class="form-group">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
 
                             <input type="email" placeholder="Your email" class="form-control">
-                            </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <div class="form-group">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
 
                             <input type="tel" placeholder="Your phone" class="form-control">
-                            </div></div>
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
 
                             <textarea name="valovenko" id="valovenko" cols="30" rows="3"
-                                                         placeholder="Message" class="form-control"></textarea></div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <button class="vl-btn">Send Message</button>
-                        </div>
+                                      placeholder="Message" class="form-control"></textarea></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <button class="vl-btn">Send Message</button>
+                    </div>
                 </div>
             </div>
         </div>
