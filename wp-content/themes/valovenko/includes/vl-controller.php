@@ -189,11 +189,10 @@
 	function vl_banner_section() {
 		$banner = get_field( 'banner_image' );
 		if ( $banner ) {
-			echo '<img src="' . $banner['url'] . '" srcset = "' . wp_get_attachment_image_srcset( $banner['ID'] ) . '" alt="' . $banner['alt'] . '" />';
+			return $banner['url'];
 		} else {
-			echo '<img src="' . VL_DEFAULT_IMAGE . '" alt="' . VL_DEFAULT_ALT . '" />';
+			return VL_DEFAULT_IMAGE;
 		}
-		unset( $banner );
 	}
 
 	function vl_reason_to_stay_section() {

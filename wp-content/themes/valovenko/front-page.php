@@ -5,7 +5,6 @@
 	get_header(); ?>
 <section id="banner">
     <h1>Banner</h1>
-	<?php vl_banner_section(); ?>
 </section>
 
 <section id="reason-to-stay">
@@ -41,29 +40,60 @@
 <section id="contact-us">
     <div class="container">
         <h4 class="text-center">Contact Us</h4>
-<div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-5">
-        <div class="contact-info">
-            <ul>
-                <li class="adress"><span class="glyphicon glyphicon-map-marker" aria-hidden="true">Kharkiv, Korolenko str, build 16</span></li>
-                <li class="adress"><span class="glyphicon glyphicon-earphone" aria-hidden="true">Phone: <a
-                                href="tel:+380664944787">+380 66 494 47 87</a></span></li>
-                <li class="adress"><span class="glyphicon glyphicon-calendar" aria-hidden="true">Monday-Sunday : 9.00-19.00</span></li>
-                <li class="adress"><span class="glyphicon glyphicon-envelope" aria-hidden="true">Email : <a
-                                href="mailto:alina.valovenko@gmail.com">alina.valovenko@gmail.com</a></span></li>
-                <li class="adress"><span class="glyphicon glyphicon-globe" aria-hidden="true">Web : <a
-                                href="https://www.valovenko.com">https://www.valovenko.com</a></span></li>
-            </ul>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-5">
+                <div class="contact-info">
+                    <ul>
+                        <li class="adress"><span class="glyphicon glyphicon-map-marker" aria-hidden="true">Kharkiv, Korolenko str, build 16</span>
+                        </li>
+                        <li class="adress"><span class="glyphicon glyphicon-earphone" aria-hidden="true">Phone: <a
+                                        href="tel:+380664944787">+380 66 494 47 87</a></span></li>
+                        <li class="adress"><span class="glyphicon glyphicon-calendar" aria-hidden="true">Monday-Sunday : 9.00-19.00</span>
+                        </li>
+                        <li class="adress"><span class="glyphicon glyphicon-envelope" aria-hidden="true">Email : <a
+                                        href="mailto:alina.valovenko@gmail.com">alina.valovenko@gmail.com</a></span>
+                        </li>
+                        <li class="adress"><span class="glyphicon glyphicon-globe" aria-hidden="true">Web : <a
+                                        href="https://www.valovenko.com">https://www.valovenko.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="form-group row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                            <input type="text" placeholder="Your name" class="form-control"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+
+                            <input type="email" placeholder="Your email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+
+                            <input type="tel" placeholder="Your phone" class="form-control">
+                            </div></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+
+                            <textarea name="" id="" cols="30" rows="3"
+                                                         placeholder="Message" class="form-control"></textarea></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <button class="vl-btn">Send Message</button>
+                        </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-7">
-        <div>
-	        <?php
-	        ?>
-        </div>
-    </div>
-</div>
     </div>
 </section>
 
 <?php get_footer(); ?>
+<style>
+    #banner {
+        background: url(<?php echo vl_banner_section(); ?>) no-repeat;
+    }
+</style>
+

@@ -36,7 +36,10 @@ header.header-wrap {
     width: 200px;
 }
 #banner{
-    position: relative
+    position: relative;
+    height: 100vh;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
 }
 
 #banner h1 {
@@ -183,12 +186,13 @@ span.service-price {
     text-transform: uppercase;
     font-size: 26px;
     line-height: 30px;
+    padding: 0 0 60px 0;
 }
 
 .contact-info {
     font-size: 16px;
     line-height: 22px;
-    background: url(/assets/images/map.png)no-repeat center center / cover;
+    background: url(../valovenko/assets/images/map.png)no-repeat center center / cover;
 }
 
 li.adress {
@@ -199,4 +203,42 @@ footer#vl-footer{
     background-color: #464646;
     color: #fff;
     padding: 60px;
+}
+.vl-primary-navigation{
+    float: right;
+}
+.vl-primary-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vl-primary-navigation ul li{
+    float: left;
+    margin: 0 15px;
+    line-height: 40px;
+}
+.vl-primary-navigation ul li a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.vl-btn{
+    display: inline-block;
+    padding: 4px 30px;
+    border: 1px solid #ef403b;
+    border-radius: 4px;
+    background-color: #ef403b;
+    color: #fff;
+    font: 500 14px/30px "Montserrat", sans-serif;
+    -o-transition: border .3s ease, background-color .3s ease, color .3s ease;
+    -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
+    -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
+    transition: border .3s ease, background-color .3s ease, color .3s ease;
+}
+.vl-btn:hover{
+    border: 1px solid #ef403b;
+    background: transparent;
+    color: #ef403b;
+    text-decoration: none;
 }
