@@ -1,4 +1,4 @@
-<footer id="vl-footer">
+<footer id="vl-footer" class="text-center">
     Footer
 </footer>
 

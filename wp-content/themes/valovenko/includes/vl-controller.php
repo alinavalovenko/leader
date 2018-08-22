@@ -202,22 +202,27 @@
 		if ( $reason_to_stay ) {
 			foreach ( $reason_to_stay as $item ) {
 				?>
-                <div class="reason-card col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                    <div class="reason-icon"><img src="<?php echo $item['reason_image']['url']; ?>"
-                                                  alt="<?php echo $item['reason_image']['alt']; ?>"
-                                                  class="thumbnail"/></div>
-                    <div class="reason-title"><?php echo $item['reason_title']; ?></div>
-                    <div class="reason-desc"><?php echo $item['reason_description']; ?></div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="reason-card">
+                        <div class="reason-icon"><img src="<?php echo $item['reason_image']['url']; ?>"
+                                                      alt="<?php echo $item['reason_image']['alt']; ?>"
+                                                      class="thumbnail"/></div>
+                        <h6 class="reason-title"><?php echo $item['reason_title']; ?></h6>
+                        <div class="reason-desc"><?php echo $item['reason_description']; ?></div>
+                    </div>
                 </div>
 				<?php
 			}
 		} else {
 			?>
-            <div class="reason-card col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                <div class="reason-icon"><img src="<?php echo VL_DEFAULT_IMAGE; ?>" alt="<?php echo VL_DEFAULT_ALT; ?>"
-                                              class="thumbnail"/></div>
-                <div class="reason-title">You Want to Revenue</div>
-                <div class="reason-desc">for your online business through great design.</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <div class="reason-card">
+                    <div class="reason-icon"><img src="<?php echo VL_DEFAULT_IMAGE; ?>"
+                                                  alt="<?php echo VL_DEFAULT_ALT; ?>"
+                                                  class="thumbnail"/></div>
+                    <h6 class="reason-title">You Want to Revenue</h6>
+                    <div class="reason-desc">for your online business through great design.</div>
+                </div>
             </div>
 			<?php
 		}
@@ -227,28 +232,33 @@
 		$about_us = get_field( 'about_us' );
 		if ( $about_us['section_title'] ) {
 			?>
-            <div class="about-us-subtitle"><?php echo $about_us['sub_title']; ?></div>
-            <div class="about-us-title"><?php echo $about_us['section_title']; ?></div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <article>
-					<?php echo $about_us['section_content']; ?>
-                </article>
-
-                <div class="row performance-indicators">
-                    <div class="col-xs-6">
-                        <div><?php echo $about_us['work_period']; ?></div>
-                        <div>Weekly users</div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div><?php echo $about_us['success_count']; ?></div>
-                        <div>Concurrent reports</div>
-                    </div>
+            <div class="row">
+                <div class="about-us-header text-center">
+                    <h6><?php echo $about_us['sub_title']; ?></h6>
+                    <h2><?php echo $about_us['section_title']; ?></h2>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <img src="<?php echo $about_us['image']['url']; ?>"
-                     srcset="<?php wp_get_attachment_image_srcset( $about_us['image']['ID'] ); ?>"
-                     alt="<?php echo $about_us['image']['alt']; ?>"/>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <article>
+						<?php echo $about_us['section_content']; ?>
+                    </article>
+                    <div class=" row performance-indicators text-center">
+                        <div class="col-xs-6 performance-item">
+                            <div class="indicators-value"><?php echo $about_us['work_period']; ?></div>
+                            <div class="indicators-text">Weekly users</div>
+                        </div>
+                        <div class="col-xs-6 performance-item">
+                            <div class="indicators-value"><?php echo $about_us['success_count']; ?></div>
+                            <div class="indicators-text">Concurrent reports</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <img src="<?php echo $about_us['image']['url']; ?>"
+                         srcset="<?php wp_get_attachment_image_srcset( $about_us['image']['ID'] ); ?>"
+                         alt="<?php echo $about_us['image']['alt']; ?>"/>
+                </div>
             </div>
 			<?php
 		} else {
@@ -263,14 +273,14 @@
                         actualize just in time partnerships with exceptional value.</p>
                 </article>
 
-                <div class="row performance-indicators">
-                    <div class="col-xs-6">
-                        <div>31m</div>
-                        <div>Weekly users</div>
+                <div class=" row performance-indicators text-center">
+                    <div class="col-xs-6 performance-item">
+                        <div class="indicators-value">31m</div>
+                        <div class="indicators-text">Weekly users</div>
                     </div>
-                    <div class="col-xs-6">
-                        <div>200</div>
-                        <div>Concurrent reports</div>
+                    <div class="col-xs-6 performance-item">
+                        <div class="indicators-value">200</div>
+                        <div class="indicators-text">Concurrent reports</div>
                     </div>
                 </div>
             </div>
@@ -286,24 +296,28 @@
 		if ( have_rows( 'servises_repeater' ) ):
 			while ( have_rows( 'servises_repeater' ) ) : the_row();
 				?>
-                <div class="service-card col-xs-12 col-sm-2 col-md-3 col-lg-3">
-                    <div class="service-label"><?php the_sub_field( 'servises_label' ); ?></div>
-                    <div class="service-title"><?php the_sub_field( 'servises_title' ); ?></div>
-                    <div class="service-desc"><?php the_sub_field( 'services_description' ); ?></div>
-                    <div class="service-price"><?php the_sub_field( 'services_price' ); ?></div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="service-card ">
+                        <span class="service-label"><?php the_sub_field( 'servises_label' ); ?></span>
+                        <div class="service-title"><?php the_sub_field( 'servises_title' ); ?></div>
+                        <div class="service-desc"><?php the_sub_field( 'services_description' ); ?></div>
+                        <span class="service-price"><?php the_sub_field( 'services_price' ); ?></span>
+                    </div>
                 </div>
 			<?php
 
 			endwhile;
 
 		else : ?>
-            <div class="service-card col-xs-12 col-sm-2 col-md-3 col-lg-3">
-                <div class="service-label">Hot</div>
-                <div class="service-title">SEO MARKETING</div>
-                <div class="service-desc">Rapidiously unleash accurate processes rather than revolutionary best
-                    practices.
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="service-card">
+                    <span class="service-label">Hot</span>
+                    <div class="service-title">SEO MARKETING</div>
+                    <div class="service-desc">Rapidiously unleash accurate processes rather than revolutionary best
+                        practices.
+                    </div>
+                    <span class="service-price">$100</span>
                 </div>
-                <div class="service-price">$100</div>
             </div>
 		<?php endif;
 	}
@@ -313,12 +327,16 @@
 		$size   = 'full'; // (thumbnail, medium, large, full or custom size)
 
 		if ( $images ): ?>
-            <ul>
-				<?php foreach ( $images as $image ): ?>
-                    <li>
-						<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-                    </li>
-				<?php endforeach; ?>
-            </ul>
+            <section id="gallery" class="container">
+                <h3 class="text-center">Our projects</h3>
+                <ul>
+					<?php foreach ( $images as $image ): ?>
+                        <li>
+							<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                        </li>
+					<?php endforeach; ?>
+                </ul>
+            </section>
+
 		<?php endif;
 	}
