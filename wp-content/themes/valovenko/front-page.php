@@ -29,11 +29,11 @@
 <?php vl_gallery(); ?>
 
 <main class="container">
+
 	<?php if ( have_posts() ): the_post(); ?>
 		<?php get_template_part( 'content' ); ?>
 	<?php else : ?>
 		<?php get_template_part( 'content', 'none' ); ?>
-
 	<?php endif; ?>
 </main>
 
@@ -44,17 +44,18 @@
             <div class="col-xs-12 col-sm-6 col-md-5">
                 <div class="contact-info">
                     <ul class="list-inline">
-                        <li class="adress"><i class="fa fa-map-marker" aria-hidden="true"></i>Kharkiv, Korolenko str, build 16
-                             </li>
+                        <li class="adress"><i class="fa fa-map-marker" aria-hidden="true"></i>Kharkiv, Korolenko str,
+                            build 16
+                        </li>
                         <li class="adress"><i class="fa fa-phone" aria-hidden="true"></i>Phone: <a
-                                        href="tel:+380664944787">+380 66 494 47 87</a></li>
+                                    href="tel:+380664944787">+380 66 494 47 87</a></li>
                         <li class="adress"><i class="fa fa-calendar" aria-hidden="true"></i>Monday-Sunday : 9.00-19.00
                         </li>
                         <li class="adress"><i class="fa fa-envelope" aria-hidden="true"></i>Email : <a
-                                        href="mailto:alina.valovenko@gmail.com">alina.valovenko@gmail.com</a>
+                                    href="mailto:alina.valovenko@gmail.com">alina.valovenko@gmail.com</a>
                         </li>
                         <li class="adress"><i class="fa fa-globe" aria-hidden="true"></i>Web : <a
-                                        href="https://www.valovenko.com">https://www.valovenko.com</a></li>
+                                    href="https://www.valovenko.com">https://www.valovenko.com</a></li>
                     </ul>
                 </div>
             </div>

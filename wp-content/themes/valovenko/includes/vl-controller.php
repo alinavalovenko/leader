@@ -327,13 +327,11 @@
 		if ( $images ): ?>
             <section id="gallery" class="container">
                 <h3 class="text-center">Our projects</h3>
-                <ul>
 					<?php foreach ( $images as $image ): ?>
-                        <li>
+                <div class="col-12 col-md-4 col-sm-4">
 							<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-                        </li>
+                </div>
 					<?php endforeach; ?>
-                </ul>
             </section>
 
 		<?php endif;
