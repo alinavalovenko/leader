@@ -1,0 +1,260 @@
+/*
+Theme Name:     Valovenko
+Theme URI:      https://www.leader.biz.ua
+Description:    Mobile first theme for Web Studio Leader
+Author:         Alina Valovenko
+Version:        0.1.0
+Text Domain: 	valovenko
+*/
+
+body{
+    color: #848484;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #464646;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: #ef403b;
+    opacity: 1;
+}
+
+a:hover{
+    color: #ef403b;
+    opacity: 0.7;
+}
+/** HEADER **/
+header.header-wrap {
+    background-color: #33baf0;
+    padding: 30px 0;
+}
+
+#site-header .site-logo{
+    width: 200px;
+}
+#banner{
+    position: relative;
+    height: 100vh;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+}
+
+#banner h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+section#reason-to-stay, #contact-us {
+    background-color: #f6f7fb;
+    border-bottom: 1px solid #ECEDEF;
+    padding: 60px 0;
+}
+
+.reason-card {
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    background: #fff;
+    padding: 20px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+h6.reason-title {
+    font-size: 15px;
+    line-height: 17px;
+    color: #000;
+    margin: 15px 0;
+}
+
+section#about-us {
+    padding: 100px 0;
+}
+.about-us-header{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.performance-indicators {
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.indicators-value {
+    margin-bottom: 0;
+    font-size: 45px;
+    line-height: 50px;
+    color: #464646;
+    font-weight: 600;
+    min-width: 130px;
+}
+
+.indicators-text {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #464646;
+    font-weight: 600;
+}
+.performance-item{
+    padding: 0 20px;
+    position: relative;
+}
+.performance-item:first-of-type {
+    border-right: 1px solid #ef403b;
+}
+.indicators-value::after{
+    position: absolute;
+    width: 24px;
+    height: 38px;
+    margin-left: 12px;
+    display: inline-block;
+    content: '↑';
+    background-size: contain;
+    color: darkgreen;
+}
+
+section#services {
+    background-color: #f6f7fb;
+    border-bottom: 1px solid #ECEDEF;
+    padding: 100px 0;
+}
+section#services h3, section#gallery h3, #contact-us h4 {
+    margin-bottom: 50px;
+}
+section#gallery{
+    padding: 100px 0;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 25px 65px 25px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ecedef;
+    border-radius: 4px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+    -o-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+}
+
+span.service-label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    background-color: #33baf0;
+    padding: 1px 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.service-title {
+    color: #464646;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+span.service-price {
+    background-color: #05AE0E;
+    color: #fff;
+    border-radius: 30px;
+    padding: 3px 30px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+#contact-us h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 0 0 60px 0;
+}
+
+.contact-info {
+    font-size: 16px;
+    line-height: 22px;
+    background: url(../valovenko/assets/images/map.png)no-repeat center center / cover;
+}
+#contact-us li i {
+    padding-right: 10px;
+}
+li.adress {
+    padding: 8px 0;
+}
+
+footer#vl-footer{
+    background-color: #464646;
+    color: #fff;
+    padding: 60px;
+}
+.vl-primary-navigation{
+    float: right;
+}
+.vl-primary-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vl-primary-navigation ul li{
+    float: left;
+    margin: 0 15px;
+    line-height: 40px;
+}
+.vl-primary-navigation ul li a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.vl-btn{
+    display: inline-block;
+    padding: 4px 30px;
+    border: 1px solid #ef403b;
+    border-radius: 4px;
+    background-color: #ef403b;
+    color: #fff;
+    font: 500 14px/30px "Montserrat", sans-serif;
+    -o-transition: border .3s ease, background-color .3s ease, color .3s ease;
+    -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
+    -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
+    transition: border .3s ease, background-color .3s ease, color .3s ease;
+}
+.vl-btn:hover{
+    border: 1px solid #ef403b;
+    background: transparent;
+    color: #ef403b;
+    text-decoration: none;
+}
+
+#vl-footer ul li{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0;
+    margin: 5px;
+    background: #fff;
+    display: inline-block;
+}
