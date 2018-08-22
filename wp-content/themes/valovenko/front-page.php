@@ -78,7 +78,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
 
-                            <textarea name="" id="" cols="30" rows="3"
+                            <textarea name="valovenko" id="valovenko" cols="30" rows="3"
                                                          placeholder="Message" class="form-control"></textarea></div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -89,11 +89,10 @@
         </div>
     </div>
 </section>
-
-<?php get_footer(); ?>
 <style>
     #banner {
         background: url(<?php echo vl_banner_section(); ?>) no-repeat;
     }
 </style>
+<?php get_footer(); ?>
 

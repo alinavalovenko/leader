@@ -255,8 +255,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <img src="<?php echo $about_us['image']['url']; ?>"
-                         srcset="<?php wp_get_attachment_image_srcset( $about_us['image']['ID'] ); ?>"
-                         alt="<?php echo $about_us['image']['alt']; ?>"/>
+                         srcset="<?php echo wp_get_attachment_image_srcset( $about_us['image']['ID'] ); ?>" sizes="(max-width: 1420px) 100vw, 1420px" alt="<?php echo $about_us['image']['alt']; ?>"/>
                 </div>
             </div>
 			<?php
