@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
     <meta charset="UTF-8">
     <meta name="description"
           content="<?php __( 'Создание и продвижение сайтов на заказ. Заказать сайт визитку, интернет-магазин или сайт для бизнеса. Опыт работы 10 лет. Веб студия Leader', 'valovenko' ); ?>">
