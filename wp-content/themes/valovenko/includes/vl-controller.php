@@ -201,7 +201,7 @@
 		if ( $reason_to_stay ) {
 			foreach ( $reason_to_stay as $item ) {
 				?>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="reason-card">
                         <div class="reason-icon"><img src="<?php echo $item['reason_image']['url']; ?>"
                                                       alt="<?php echo $item['reason_image']['alt']; ?>"
@@ -214,7 +214,7 @@
 			}
 		} else {
 			?>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="reason-card">
                     <div class="reason-icon"><img src="<?php echo VL_DEFAULT_IMAGE; ?>"
                                                   alt="<?php echo VL_DEFAULT_ALT; ?>"
@@ -245,11 +245,11 @@
                     <div class=" row performance-indicators text-center">
                         <div class="col-xs-6 performance-item">
                             <div class="indicators-value"><?php echo $about_us['work_period']; ?></div>
-                            <div class="indicators-text">Weekly users</div>
+                            <div class="indicators-text">лет опыта</div>
                         </div>
                         <div class="col-xs-6 performance-item">
                             <div class="indicators-value"><?php echo $about_us['success_count']; ?></div>
-                            <div class="indicators-text">Concurrent reports</div>
+                            <div class="indicators-text">упешных дел</div>
                         </div>
                     </div>
                 </div>
@@ -327,11 +327,11 @@
 		if ( $images ): ?>
             <section id="gallery" class="container">
                 <h3 class="text-center">Our projects</h3>
-					<?php foreach ( $images as $image ): ?>
-                <div class="col-12 col-md-4 col-sm-4">
-							<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-                </div>
-					<?php endforeach; ?>
+				<?php foreach ( $images as $image ): ?>
+                    <div class="col-12 col-md-4 col-sm-4">
+						<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                    </div>
+				<?php endforeach; ?>
             </section>
 
 		<?php endif;
