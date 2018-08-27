@@ -11,8 +11,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="wrapper">
-    <header id="site-header" class="header-wrap container-fluid">
+    <header id="site-header" class="header-wrap">
         <div class="header-content container">
             <div class="row">
                 <div class="logo col-xs-8 col-sm-5 col-md-4 col-lg-4 pull-left">

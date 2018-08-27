@@ -58,7 +58,7 @@ header.header-wrap {
 section#reason-to-stay, #contact-us {
     background-color: #f6f7fb;
     border-bottom: 1px solid #ECEDEF;
-    padding: 60px 0;
+    padding: 60px 15px;
 }
 
 .reason-card {
@@ -86,7 +86,7 @@ h6.reason-title {
 }
 
 section#about-us {
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 
 .about-us-header {
@@ -138,7 +138,7 @@ section#about-us {
 section#services {
     background-color: #f6f7fb;
     border-bottom: 1px solid #ECEDEF;
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 
 section#services h3, section#gallery h3, #contact-us h4 {
@@ -146,7 +146,7 @@ section#services h3, section#gallery h3, #contact-us h4 {
 }
 
 section#gallery {
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 
 .service-card {
