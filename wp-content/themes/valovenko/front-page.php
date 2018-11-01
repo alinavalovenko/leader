@@ -1,14 +1,23 @@
 <?php
-	/**
-	 * Template Part: Home Page
-	 */
-	get_header(); ?>
+/**
+ * Template Part: Home Page
+ */
+get_header(); ?>
 <section id="banner">
-    <h1>Banner</h1>
+   <div class="container">
+       <div class="row">
+           <div class="col-xs-12 col-sm-7"></div>
+           <div class="col-xs-12 col-sm-5"></div>
+       </div>
+   </div>
 </section>
 
 <section id="reason-to-stay">
     <div class="container">
+        <div class="about-us-header text-center">
+            <h6>HAVING 5 YEARS EXPERIENCE</h6>
+            <h3>AMAZING <strong>EXPERIENCE</strong> WITH</h3>
+        </div>
         <div class="row">
 			<?php vl_reason_to_stay_section(); ?>
         </div>

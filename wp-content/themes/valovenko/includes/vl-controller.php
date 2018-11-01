@@ -326,7 +326,7 @@
 
 		if ( $images ): ?>
             <section id="gallery" class="container">
-                <h3 class="text-center">Our projects</h3>
+                <h3 class="text-center">Certificates & Honors</h3>
 				<?php foreach ( $images as $image ): ?>
                     <div class="col-12 col-md-4 col-sm-4">
 						<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>

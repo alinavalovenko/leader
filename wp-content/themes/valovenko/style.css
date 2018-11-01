@@ -71,6 +71,7 @@ section#reason-to-stay, #contact-us {
     transition: .4s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    margin: 20px 0 0 0;
 }
 
 .reason-icon img {
