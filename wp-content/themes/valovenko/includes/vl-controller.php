@@ -118,7 +118,7 @@
 							'name'    => 'servises_title',
 							'type'    => 'text',
 							'wrapper' => array (
-								'width' => '30',
+								'width' => '20',
 								'class' => '',
 								'id'    => '',
 							),
@@ -129,7 +129,7 @@
 							'name'    => 'servises_label',
 							'type'    => 'text',
 							'wrapper' => array (
-								'width' => '30',
+								'width' => '10',
 								'class' => '',
 								'id'    => '',
 							),
@@ -140,7 +140,7 @@
 							'name'    => 'services_price',
 							'type'    => 'text',
 							'wrapper' => array (
-								'width' => '30',
+								'width' => '20',
 								'class' => '',
 								'id'    => '',
 							),
@@ -151,7 +151,7 @@
 							'name'    => 'services_description',
 							'type'    => 'textarea',
 							'wrapper' => array (
-								'width' => '100',
+								'width' => '50',
 								'class' => '',
 								'id'    => '',
 							),
