@@ -1,43 +1,61 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width">
-    <meta charset="UTF-8">
-    <meta name="description"
-          content="<?php __( 'Создание и продвижение сайтов на заказ. Заказать сайт визитку, интернет-магазин или сайт для бизнеса. Опыт работы 10 лет. Веб студия Leader', 'valovenko' ); ?>">
-    <meta name="keywords"
-          content="Сайт визитка в Харькове, Интернет-магазин на заказ в Харькове, Заказать сайт в Харькове">
-    <meta name="author" content="Alina Valovenko">
-	<?php wp_head(); ?>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Alina Valovenko / Web Developer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <?php wp_head(); ?>
+    <!--favicon-->
+    <link rel="shortcut icon" href="<?php echo VL_IMAGES . 'favicon.ico'; ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo VL_IMAGES . 'favicon.ico'; ?>" type="image/x-icon">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600%7CRaleway:300,400,500,600,700,800" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
-    <header id="site-header" class="header-wrap">
-        <div class="header-content container">
-            <div class="row">
-                <div class="logo col-xs-8 col-sm-5 col-md-4 col-lg-4 pull-left">
-                    <img src="<?php echo VL_IMAGES . 'logo.png'; ?>" alt="<?php echo VL_DEFAULT_ALT; ?>"
-                         class="site-logo">
-                </div>
-                <div class="col-xs-4 col-sm-7 col-md-8 col-lg-8 pull-right">
-					<?php echo wp_nav_menu( array (
-						'theme_location'  => 'primary-menu',
-						'menu'            => '',
-						'container'       => 'nav',
-						'container_class' => 'vl-primary-navigation',
-						'container_id'    => 'vl-primary-navigation',
-						'menu_class'      => 'header-menu',
-						'menu_id'         => '',
-						'echo'            => true,
-						'fallback_cb'     => 'wp_page_menu',
-						'before'          => '',
-						'after'           => '',
-						'link_before'     => '',
-						'link_after'      => '',
-						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-						'depth'           => 0,
-						'walker'          => '',
-					) ); ?>
-                </div>
+<!-- preloader -->
+<div id="loader-wrapper">
+    <div class="world">
+        <img src="<?php echo VL_IMAGES . 'loader.svg'; ?>" alt="" />
+    </div>
+</div>
+<!-- preloader ends!-->
+
+<header class="header-area">
+    <div class="container">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- Logo -->
+            <div id="logo_home">
+                <a href="index.html">Resume</a>
             </div>
-        </div>
-    </header>
+            <!-- Logo ends! -->
+            <!--menu toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+               <span class="icon-th"></span>
+               </span>
+            </button>
+            <!--menu toggler ends! -->
+            <!--menu -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul id="menu_scroll" class="navbar-nav menu">
+                    <li><a href="#home" class="scroll active">Home</a></li>
+                    <li><a href="#about" class="scroll">About</a></li>
+                    <li><a href="#experience" class="scroll">Experience</a></li>
+                    <li><a href="#services" class="scroll">Services</a></li>
+                    <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+                    <li><a href="#clients" class="scroll">Clients</a></li>
+                    <li><a href="#blog" class="scroll">Blog</a></li>
+                </ul>
+            </div>
+            <!--menu ends!-->
+            <!--Quote button-->
+            <a class="btn scroll" href="#quote">Get a Quote</a>
+        </nav>
+        <!-- Nav ends!-->
+    </div>
+</header>
+<!-- Header ends! -->
