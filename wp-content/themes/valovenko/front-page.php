@@ -1,3 +1,9 @@
+<?php
+/**
+ *
+ *  Template Name: Front Page
+ *
+ */?>
 <?php get_header(); ?>
 <!-- Start home -->
 <div id="home" class="home-area parallax_img">
@@ -20,9 +26,7 @@
                 </h1>
                 <!-- heading text ends!-->
                 <!-- description -->
-                <p class="description">I'm a  Full-Stack Web Developer with extensive
-                    experience for over 8 years. My expertise is to create and design
-                    Websites, Apps, Mockups and many more...
+                <p class="description">
                 </p>
                 <!-- description ends!-->
                 <!-- button-->
