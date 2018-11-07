@@ -26,7 +26,9 @@
                 </h1>
                 <!-- heading text ends!-->
                 <!-- description -->
-                <p class="description">
+                <p class="description">I'm a  Full-Stack Web Developer with extensive
+                    experience for over 8 years. My expertise is to create and design
+                    Websites, Apps, Mockups and many more...
                 </p>
                 <!-- description ends!-->
                 <!-- button-->
