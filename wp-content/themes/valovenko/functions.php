@@ -422,7 +422,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 					array(
 						'key' => 'field_5be305c2e20b0',
 						'label' => 'Name',
-						'name' => '',
+						'name' => 'your_name',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,

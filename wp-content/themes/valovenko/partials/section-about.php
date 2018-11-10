@@ -1,3 +1,4 @@
+<?php $group_data = get_field( 'about_section' ); ?>
 <div id="about" class="single-section about-area">
 	<div class="container">
 		<div class="row">
@@ -13,40 +14,37 @@
 				<div class="about-content">
 					<!--Heading section-->
 					<div class="section-heading">
-						<h2 class="section-title">About Me</h2>
-						<h6 class="about-role">I am a Full-Stack Web Developer</h6>
+						<h2 class="section-title"><?php echo $group_data['title']; ?></h2>
+						<h6 class="about-role"><?php echo $group_data['subtitle']; ?></h6>
 					</div>
 					<!--Heading section ends!-->
 					<!--Describtion-->
-					<p>Sed ut perspiciatis unde accusantium doloremque laudantium,totam rem aperiam.</p>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-						laudantium,totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-					</p>
+                    <?php echo $group_data['description']; ?>
 					<!--Describtion ends!-->
 					<hr>
 					<!--about details-->
 					<ul class="list-inline about-info">
 						<li>
-							<span>Name:</span>
-							<p>Sadiq Siddiqui</p>
+							<span><?php echo __('Name:'); ?></span>
+							<p><?php  echo $group_data['your_name']?></p>
 						</li>
 						<li>
-							<span>Email:</span>
-							<p><a href="mailto:sadiq@example.com">sadiq@example.com</a></p>
+							<span><?php echo __('Email:'); ?></span>
+							<p><a href="mailto:<?php  echo $group_data['email']?>"><?php  echo $group_data['email']?></a></p>
 						</li>
 						<li>
-							<span>Age:</span>
-							<p>25</p>
+							<span><?php echo __('Age:'); ?></span>
+							<p><?php  echo $group_data['age']?></p>
 						</li>
 						<li>
-							<span>From:</span>
-							<p>Liverpool, United Kingdom</p>
+							<span><?php echo __('From:'); ?></span>
+							<p><?php  echo $group_data['from']?></p>
 						</li>
 					</ul>
 					<!--about details ends!-->
 					<!--buttons-->
-					<a href="#0" class="btn button-scheme">Resume</a>
-					<a href="#experience" class="btn scroll">Experience</a>
+					<a href="<?php echo $group_data['dark_button_link']; ?>" class="btn button-scheme"><?php echo $group_data['dark_button_text']; ?></a>
+					<a href="<?php echo $group_data['light_button_link']; ?>" class="btn scroll"><?php echo $group_data['light_button_text']; ?></a>
 					<!--buttons ends!-->
 				</div>
 			</div>
