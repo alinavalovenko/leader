@@ -1,4 +1,4 @@
-<?php $group_data = get_field( 'services_options' ); var_dump($group_data);?>
+<?php $group_data = get_field( 'services_options' ); ?>
 <div id="services" class="single-section services-area parallax_img">
     <div class="container">
         <div class="row">
