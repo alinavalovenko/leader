@@ -1388,7 +1388,7 @@ eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dic
 							array(
 								'key' => 'field_5be5650ed0bd2',
 								'label' => 'Service Decription',
-								'name' => 'service_decription',
+								'name' => 'service_description',
 								'type' => 'textarea',
 								'instructions' => '',
 								'required' => 0,
