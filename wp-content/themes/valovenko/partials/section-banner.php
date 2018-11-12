@@ -33,8 +33,9 @@
                 <img src="<?php echo VL_IMAGES . 'big-profile.png'; ?>"
                      alt="<?php echo esc_html__( VL_DEFAULT_ALT, 'valovenko' ); ?>">
 			<?php } else { ?>
-				<?php echo wp_get_attachment_image( $group_data['front_banner']['ID'] ); ?>
-			<?php } ?>
+                <img src="<?php echo $group_data['front_banner']['url'] ?>"
+                     alt="<?php echo esc_html__( $group_data['front_banner']['alt'], 'valovenko' ); ?>">
+            <?php } ?>
         </div>
     </div>
 </div>

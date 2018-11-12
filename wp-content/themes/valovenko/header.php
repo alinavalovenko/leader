@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-lg">
             <!-- Logo -->
             <div id="logo_home">
-                <a href="index.html">Resume</a>
+                <a href="<?php bloginfo('url'); ?>">Обшивка деревом, вагонкой</a>
             </div>
             <!-- Logo ends! -->
             <!--menu toggler -->
@@ -42,18 +42,18 @@
             <!--menu -->
             <div class="collapse navbar-collapse" id="menu">
                 <ul id="menu_scroll" class="navbar-nav menu">
-                    <li><a href="#home" class="scroll active">Home</a></li>
-                    <li><a href="#about" class="scroll">About</a></li>
-                    <li><a href="#experience" class="scroll">Experience</a></li>
-                    <li><a href="#services" class="scroll">Services</a></li>
-                    <li><a href="#portfolio" class="scroll">Portfolio</a></li>
-                    <li><a href="#clients" class="scroll">Clients</a></li>
-                    <li><a href="#blog" class="scroll">Blog</a></li>
+                    <li><a href="#home" class="scroll active">Главная</a></li>
+                    <li><a href="#about" class="scroll">О нас</a></li>
+                    <li><a href="#experience" class="scroll">Опыт работы</a></li>
+                    <li><a href="#services" class="scroll">Услуги</a></li>
+                    <li><a href="#portfolio" class="scroll">Фото работ</a></li>
+<!--                    <li><a href="#clients" class="scroll">Clients</a></li>-->
+<!--                    <li><a href="#blog" class="scroll">Blog</a></li>-->
                 </ul>
             </div>
             <!--menu ends!-->
             <!--Quote button-->
-            <a class="btn scroll" href="#quote">Get a Quote</a>
+            <a class="btn scroll" href="#quote">Консультация</a>
         </nav>
         <!-- Nav ends!-->
     </div>

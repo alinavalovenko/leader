@@ -363,7 +363,7 @@ h5.subtitle {
     bottom: 0;
     right: 0;
     top: 0;
-    background-image: linear-gradient(to right, #360b7b 0%, #003a9c 100%);
+    background-image: linear-gradient(to right, #000000 0%, #54569c 100%);
     opacity: 0.6;
 }
 

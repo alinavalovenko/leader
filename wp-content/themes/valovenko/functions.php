@@ -967,76 +967,6 @@ eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dic
 	));
 
 	acf_add_local_field_group(array(
-		'key' => 'group_5be574d46aaac',
-		'title' => 'Get a Quote',
-		'fields' => array(
-			array(
-				'key' => 'field_5be574e37fedf',
-				'label' => 'Display Get a Quote?',
-				'name' => 'display_get_a_quote',
-				'type' => 'true_false',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'message' => '',
-				'default_value' => 0,
-				'ui' => 0,
-				'ui_on_text' => '',
-				'ui_off_text' => '',
-			),
-			array(
-				'key' => 'field_5be574fb7fee0',
-				'label' => 'Contact Email',
-				'name' => 'contact_email',
-				'type' => 'text',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => array(
-					array(
-						array(
-							'field' => 'field_5be574e37fedf',
-							'operator' => '==',
-							'value' => '1',
-						),
-					),
-				),
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'maxlength' => '',
-			),
-		),
-		'location' => array(
-			array(
-				array(
-					'param' => 'post_template',
-					'operator' => '==',
-					'value' => 'front-page.php',
-				),
-			),
-		),
-		'menu_order' => 0,
-		'position' => 'normal',
-		'style' => 'default',
-		'label_placement' => 'top',
-		'instruction_placement' => 'label',
-		'hide_on_screen' => '',
-		'active' => 1,
-		'description' => '',
-	));
-
-	acf_add_local_field_group(array(
 		'key' => 'group_5be56d639d039',
 		'title' => 'Portfolio',
 		'fields' => array(
@@ -1425,6 +1355,114 @@ eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dic
 							),
 						),
 					),
+				),
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_template',
+					'operator' => '==',
+					'value' => 'front-page.php',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => 1,
+		'description' => '',
+	));
+
+	acf_add_local_field_group(array(
+		'key' => 'group_5be574d46aaac',
+		'title' => 'Get a Quote',
+		'fields' => array(
+			array(
+				'key' => 'field_5be574e37fedf',
+				'label' => 'Display Get a Quote?',
+				'name' => 'display_get_a_quote',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => '',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_5be574fb7fee0',
+				'label' => 'Contact Email',
+				'name' => 'contact_email',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5be574e37fedf',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'vl_get_quote_title',
+				'label' => 'Section Title',
+				'name' => 'vl_get_quote_title',
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5be574e37fedf',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '50',
+					'class' => '',
+					'id' => '',
+				),
+			),
+			array(
+				'key' => 'vl_get_quote_sub_title',
+				'label' => 'Section Sub Title',
+				'name' => 'vl_get_quote_sub_title',
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5be574e37fedf',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '50',
+					'class' => '',
+					'id' => '',
 				),
 			),
 		),

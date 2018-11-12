@@ -49,9 +49,8 @@ if ( get_field( 'is_active_welcome_banner' ) ) {
                 <div class="col-lg-8 col-sm-12 m-auto">
                     <div class="contact-form">
                         <div class="section-heading text-center">
-                            <h2 class="section-title">Get a Quote</h2>
-                            <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ratione!
+                            <h2 class="section-title">Свяжитесь с нами</h2>
+                            <p class="section-description">Бесплатная консультация и составление сметы
                             </p>
                         </div>
                         <form action="php/form.php" method="post" id="validation" class="form-area">
@@ -59,20 +58,20 @@ if ( get_field( 'is_active_welcome_banner' ) ) {
                                 <div class="col-md-12">
                                     <div class="select-area">
                                         <select name="project">
-                                            <option value="">What your project need?</option>
-                                            <option value="Custom interface and layout">Custom interface and layout
+                                            <option value="">Что нужно сделать?</option>
+                                            <option value="Обшивка вагонкой">Обшивка вагонкой
                                             </option>
-                                            <option value="CMS integrations (WordPress)">CMS integrations (WordPress)
+                                            <option value="Обшивка пластиком">Обшивка пластиком
                                             </option>
-                                            <option value="Website design">Website design</option>
-                                            <option value="Seo optimization">SEO optimization</option>
+                                            <option value="Обшивка блокхаус">Обшивка блокхаус</option>
+                                            <option value="Обшивка сайдигом">Обшивка сайдигом</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-area">
                                         <input name="name" type="text" required>
-                                        <label class="floating-label">Name*</label>
+                                        <label class="floating-label">Имя*</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -84,34 +83,34 @@ if ( get_field( 'is_active_welcome_banner' ) ) {
                                 <div class="col-md-6">
                                     <div class="input-area">
                                         <input name="company" type="text" required>
-                                        <label class="floating-label">Company Name*</label>
+                                        <label class="floating-label">Район Харькова</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-area">
                                         <input name="phone" type="tel" required>
-                                        <label class="floating-label">Phone*</label>
+                                        <label class="floating-label">Телефон*</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="select-area">
                                         <select name="budget">
-                                            <option value="">What is your budget?</option>
-                                            <option value="under $500">My budget is under $500</option>
-                                            <option value="$500 to $1000">My budget is between $500 to $1000</option>
-                                            <option value="$1000 to $1500">My budget is between $1000 to $1500</option>
-                                            <option value="over $1500">My budget is over $1500</option>
+                                            <option value="">Материалы и расходники</option>
+                                            <option value="Закупка материалов исполнителем">Закупка материалов исполнителем</option>
+                                            <option value="Закупка материалов заказчиком">Закупка материалов заказчиком</option>
+                                            <option value="Совместная закупка материалов">Совместная закупка материалов</option>
+                                            <option value="Под ключ">Под ключ</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="text-area">
                                         <textarea name="message" rows="6" required></textarea>
-                                        <label class="floating-label">Message</label>
+                                        <label class="floating-label">Сообщение</label>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button name="submit" type="submit" class="btn button-scheme">Send Message</button>
+                                    <button name="submit" type="submit" class="btn button-scheme">Отправить сообщение</button>
                                 </div>
                             </div>
                         </form>
@@ -124,28 +123,28 @@ if ( get_field( 'is_active_welcome_banner' ) ) {
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4 contact-info">
                             <div class="icon-box"><span class="icon-phone"></span></div>
-                            <h3>Call Us</h3>
+                            <h3>Наши телефоны</h3>
                             <ul>
-                                <li>(001) 8686 234 432</li>
-                                <li>Office - (001) 2345 678 900</li>
+                                <li>(095) 183 77 62</li>
+                                <li>(096) 423 98 27</li>
                             </ul>
                         </div>
                         <!--Email us-->
                         <div class="col-12 col-md-6 col-lg-4 contact-info">
                             <div class="icon-box"><span class="icon-mail"></span></div>
-                            <h3>Email Us</h3>
+                            <h3>Напиши нам</h3>
                             <ul>
-                                <li>Info@example.com</li>
-                                <li>support@example.com</li>
+                                <li><a href="mailto:info@obshivka-balkona.biz.ua">info@obshivka-balkona.biz.ua</a></li>
+                                <li>sales@obshivka-balkona.biz.ua</li>
                             </ul>
                         </div>
                         <!--Address-->
                         <div class="col-12 col-md-12 col-lg-4 contact-info">
                             <div class="icon-box"><span class="icon-location"></span></div>
-                            <h3>Address</h3>
+                            <h3>Мы работаем</h3>
                             <ul>
-                                <li>Elston TCLexington</li>
-                                <li>Ave 549MD, London, UK</li>
+                                <li>в г. Харьков</li>
+                                <li>в Харьковской области</li>
                             </ul>
                         </div>
                     </div>
