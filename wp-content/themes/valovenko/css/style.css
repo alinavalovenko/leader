@@ -717,6 +717,8 @@ h5.subtitle {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .exp-block h4 {
